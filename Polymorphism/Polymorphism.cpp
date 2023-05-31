@@ -30,6 +30,17 @@ public:
     }
 };
 
+int main() {
+    seseorang* orang;
+    joko a;
+    lia b;
+
+    orang = &a;
+    orang->pesan();
+    orang = &b;
+    orang->pesan();
+}
+
 int main()
 {
     std::cout << "Hello World!\n";
