@@ -31,7 +31,7 @@ public:
 };
 
 int main() {
-    seseorang* orang;
+    seseorang* orang; 
     joko a;
     lia b;
 
