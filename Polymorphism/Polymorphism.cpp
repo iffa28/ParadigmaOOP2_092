@@ -1,7 +1,34 @@
-// Polymorphism.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+using namespace std;
+
+class seseorang {
+public:
+    virtual void pesan() = 0;
+    //virtual void pesan() {
+    // cout <<"pesan dari seseorang"<<endl;
+    //}
+//virtual void cetak() = 0;
+    virtual void cetak() {
+
+    }
+};
+
+class joko : public seseorang { 
+public:
+    void pesan() {
+        cout << "Pesan dari joko" << endl;
+    }
+    void pesan() {
+        cout << "Tulisan dari joko" << endl;
+    }
+};
+
+class lia :public seseorang {
+public:
+    void pesan() {
+        cout << "Pesan dari lia" << endl;
+    }
+};
 
 int main()
 {
